@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7002580E50EAD4E7DD582470 /* libPods-videoPlayView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 045A48391714C6667ABC29A9 /* libPods-videoPlayView.a */; };
 		775B902B23D0356A004F2132 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B902A23D0356A004F2132 /* AppDelegate.m */; };
 		775B902E23D0356A004F2132 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B902D23D0356A004F2132 /* SceneDelegate.m */; };
 		775B903123D0356A004F2132 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B903023D0356A004F2132 /* ViewController.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045A48391714C6667ABC29A9 /* libPods-videoPlayView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-videoPlayView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB486161CE29007A13C2963 /* Pods-videoPlayView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoPlayView.release.xcconfig"; path = "Target Support Files/Pods-videoPlayView/Pods-videoPlayView.release.xcconfig"; sourceTree = "<group>"; };
 		775B902623D0356A004F2132 /* videoPlayView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = videoPlayView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		775B902923D0356A004F2132 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		775B902A23D0356A004F2132 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 		775B906023D035C9004F2132 /* VideoPlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayView.m; sourceTree = "<group>"; };
 		775B906223D036C4004F2132 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		775B906323D036C4004F2132 /* Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		F0A889CF7D8F7B491317C93B /* Pods-videoPlayView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-videoPlayView.debug.xcconfig"; path = "Target Support Files/Pods-videoPlayView/Pods-videoPlayView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7002580E50EAD4E7DD582470 /* libPods-videoPlayView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EB9347176580FD9EC6C81F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				045A48391714C6667ABC29A9 /* libPods-videoPlayView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		775B901D23D03569004F2132 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +107,8 @@
 				775B904423D0356E004F2132 /* videoPlayViewTests */,
 				775B904F23D0356E004F2132 /* videoPlayViewUITests */,
 				775B902723D0356A004F2132 /* Products */,
+				78562EB3AA95A0EE0C848A25 /* Pods */,
+				4EB9347176580FD9EC6C81F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +170,16 @@
 			path = carouselView;
 			sourceTree = "<group>";
 		};
+		78562EB3AA95A0EE0C848A25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0A889CF7D8F7B491317C93B /* Pods-videoPlayView.debug.xcconfig */,
+				2DB486161CE29007A13C2963 /* Pods-videoPlayView.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,6 +187,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 775B905523D0356E004F2132 /* Build configuration list for PBXNativeTarget "videoPlayView" */;
 			buildPhases = (
+				9F9D25E9776953AA46ACBC3E /* [CP] Check Pods Manifest.lock */,
 				775B902223D0356A004F2132 /* Sources */,
 				775B902323D0356A004F2132 /* Frameworks */,
 				775B902423D0356A004F2132 /* Resources */,
@@ -279,6 +305,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F9D25E9776953AA46ACBC3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-videoPlayView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		775B902223D0356A004F2132 /* Sources */ = {
@@ -457,6 +508,7 @@
 		};
 		775B905623D0356E004F2132 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0A889CF7D8F7B491317C93B /* Pods-videoPlayView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -473,6 +525,7 @@
 		};
 		775B905723D0356E004F2132 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DB486161CE29007A13C2963 /* Pods-videoPlayView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -9,6 +9,7 @@
 #import "VideoPlayView.h"
 #import <AVKit/AVKit.h>
 #import "Model.h"
+#import "UIImageView+WebCache.h"
 //网络默认图
 #define kImage                                        [UIImage imageNamed:@"placeholderImage"]
 //网络图片
@@ -140,7 +141,7 @@
                 UIImageView *imgV = [[UIImageView alloc] init];
                 [imgV setBackgroundColor:[UIColor clearColor]];
                 [imgV setFrame:view.bounds];
-//                [imgV sd_setImageWithURL:kImage_Url(model.img) placeholderImage:kImage];
+                [imgV sd_setImageWithURL:kImage_Url(model.img) placeholderImage:kImage];
                 [imgV setUserInteractionEnabled:YES];
                 [view addSubview:imgV];
                 self.videoImgV = imgV;
@@ -163,7 +164,7 @@
             [imgV setFrame:CGRectMake(10, 0, self.scrollView.bounds.size.width - 20, self.scrollView.bounds.size.height)];
             [imgV setContentMode:UIViewContentModeScaleAspectFill];
             [imgV.layer setMasksToBounds:YES];
-//            [imgV sd_setImageWithURL:kImage_Url(model.img) placeholderImage:kImage];
+            [imgV sd_setImageWithURL:kImage_Url(model.img) placeholderImage:kImage];
             [imgV.layer setCornerRadius:5];
             [imgV setClipsToBounds:YES];
             [imgV setUserInteractionEnabled:YES];
@@ -218,7 +219,7 @@
         UIImageView *imgV = [[UIImageView alloc] init];
         [imgV setBackgroundColor:[UIColor clearColor]];
         [imgV setFrame:self.videoV.bounds];
-//        [imgV sd_setImageWithURL:kImage_Url(self.listModel.img) placeholderImage:kImage];
+        [imgV sd_setImageWithURL:kImage_Url(self.listModel.img) placeholderImage:kImage];
         [imgV setUserInteractionEnabled:YES];
         [self.videoV addSubview:imgV];
         self.videoImgV = imgV;
@@ -274,7 +275,7 @@
             UIImageView *imgV = [[UIImageView alloc] init];
             [imgV setBackgroundColor:[UIColor clearColor]];
             [imgV setFrame:view.bounds];
-//            [imgV sd_setImageWithURL:kImage_Url(model.img) placeholderImage:kImage];
+            [imgV sd_setImageWithURL:kImage_Url(model.img) placeholderImage:kImage];
             [imgV setUserInteractionEnabled:YES];
             [view addSubview:imgV];
             self.videoImgV = imgV;
@@ -298,7 +299,7 @@
         [imgV setFrame:CGRectMake(10 + scrollView.contentOffset.x, 0, self.scrollView.bounds.size.width - 20, self.scrollView.bounds.size.height)];
         [imgV setContentMode:UIViewContentModeScaleAspectFill];
         [imgV.layer setMasksToBounds:YES];
-//        [imgV sd_setImageWithURL:kImage_Url(model.img) placeholderImage:kImage];
+        [imgV sd_setImageWithURL:kImage_Url(model.img) placeholderImage:kImage];
         [imgV.layer setCornerRadius:5];
         [imgV setClipsToBounds:YES];
         [imgV setUserInteractionEnabled:YES];
