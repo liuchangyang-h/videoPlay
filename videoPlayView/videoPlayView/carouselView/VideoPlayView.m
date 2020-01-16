@@ -8,6 +8,7 @@
 
 #import "VideoPlayView.h"
 #import <AVKit/AVKit.h>
+#import <AVFoundation/AVFoundation.h>
 #import "Model.h"
 #import "UIImageView+WebCache.h"
 //网络默认图
@@ -260,7 +261,7 @@
     _recordIndex = _curIndex;
     AdListmodel *model = [self.dataArr objectAtIndex:_curIndex];
 
-    if (model.jumpType == 5)
+    if (model.jumpType == 2)
     {
         self.listModel = model;
         UIView *view = [[UIView alloc] init];
